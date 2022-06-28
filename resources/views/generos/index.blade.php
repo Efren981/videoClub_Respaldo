@@ -10,7 +10,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col">
-                            <h1 class="text-center mb-5 alert-primary">Genero</h1>
+                            <h1 class="text-center mb-5 alert-primary">Género</h1>
                         </div>
                     </div>
                     <div class="card">
@@ -20,7 +20,7 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Generos</th>
+                                <th scope="col">Géneros</th>
                                 <th colspan="2" scope="col">Acciones</th>
                             </tr>
                             </thead>

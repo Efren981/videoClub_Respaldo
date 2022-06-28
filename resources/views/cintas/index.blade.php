@@ -19,8 +19,8 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col" class=" justify-content-center text-center">Numero de pelicula</th>
-                                <th scope="col" class=" justify-content-center text-center">Codigo de pelicula</th>
+                                <th scope="col" class=" justify-content-center text-center">Número de película</th>
+                                <th scope="col" class=" justify-content-center text-center">Código de película</th>
                                 <th colspan="2" scope="col" class=" justify-content-center text-center">Acciones</th>
 
                             </tr>

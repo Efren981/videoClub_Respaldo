@@ -9,7 +9,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-6">
                     <div class="col">
-                        <h1 class="text-center mb-5 alert-primary text-center">Peliculas</h1>
+                        <h1 class="text-center mb-5 alert-primary text-center">Películas</h1>
                     </div>
                     <div class="card">
                         <a href="{{url("peliculas/create")}}" class="btn btn-dark btn-sm mb-4 text-white"data-toggle="tooltip" title="Cargar nuevo socio"><span class="icon-pen">Nuevo</span></a>
@@ -18,8 +18,8 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Genero</th>
-                                    <th scope="col">Titulo</th>
+                                    <th scope="col">Género</th>
+                                    <th scope="col">Título</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                                 </thead>

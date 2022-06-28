@@ -13,4 +13,5 @@ class Socios extends Model
         "direccion",
         "telefono"
     ];
+    // php artisan make:model DetallePrestamo -mcr
 }

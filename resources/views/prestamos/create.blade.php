@@ -21,6 +21,24 @@
                                             <div class="invalid-feedback">{{$message}}</div>
                                             @enderror
                                         </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-control @error ('socio') is-invalid @enderror" id="socio" name="socio">
+                                                <option value="" selected disabled>Selecciona un socio</option>
+                                                @foreach($socios as $socio)
+                                                    <option value="{{$socio->id}}">{{$socio->nombre}} {{$socio->apellidoPaterno}} {{$socio->apellidoMaterno}}</option>
+                                                    @endforeach
+                                            </select>
+                                            <label for="nombre">Socio</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-control @error ('cinta') is-invalid @enderror" id="cinta" name="cinta">
+                                                <option value="" selected disabled>Selecciona una cinta</option>
+                                                @foreach($cintas as $cinta)
+                                                    <option value="{{$cinta->id}}">{{$cinta->titulo}} {{$cinta->codigo}}</option>
+                                                @endforeach
+                                            </select>
+                                            <label for="nombre">Cinta</label>
+                                        </div>
                                         <div class="row my-5 d-flex justify-content-center">
                                             <div class="col-3"></div>
                                             <div class="col-3">

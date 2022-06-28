@@ -20,7 +20,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col" class=" justify-content-center text-center">Nombre Real</th>
-                                <th scope="col" class=" justify-content-center text-center">Nombre Artistico</th>
+                                <th scope="col" class=" justify-content-center text-center">Nombre Artístico</th>
                                 <th scope="col" class=" justify-content-center text-center">Actores</th>
                             </tr>
                             </thead>

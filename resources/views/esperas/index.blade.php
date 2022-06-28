@@ -21,7 +21,7 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Socio</th>
-                                    <th scope="col">Pelicula</th>
+                                    <th scope="col">Película</th>
                                     <th scope="col">Prioridad</th>
                                     <th scope="col">Fecha</th>
                                     <th scope="col">Estado</th>

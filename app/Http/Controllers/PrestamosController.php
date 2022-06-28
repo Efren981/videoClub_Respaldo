@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Cintas;
+use App\Models\DetallesPrestamo;
 use App\Models\Prestamos;
+use App\Models\Socios;
 use Illuminate\Http\Request;
 
 class PrestamosController extends Controller
@@ -27,7 +29,16 @@ class PrestamosController extends Controller
     public function create()
     {
         //
-        return view('prestamos.create');
+        $socios=Socios::join("personas","socios.idPersona","personas.id")
+            ->select("socios.id","personas.nombre","personas.apellidoPaterno","personas.apellidoMaterno")
+            ->get();
+        $cintas=Cintas::join('peliculas','cintas.idPelicula','peliculas.id')
+
+            ->select('cintas.id','peliculas.titulo','cintas.codigo')
+            ->get();
+       // dd($cintas);
+
+        return view('prestamos.create',compact("socios","cintas"));
     }
 
     /**
@@ -39,9 +50,15 @@ class PrestamosController extends Controller
     public function store(Request $request)
     {
         //
+       // dd($request->all());
         $request->validate(["fechaPrestamo"=>"required"]);
-        Prestamos::create(['fechaPrestamo'=>$request->fechaPrestamo,
+        $prestamo=Prestamos::create(['fechaPrestamo'=>$request->fechaPrestamo,]);
+        DetallesPrestamo::create([
+            "idSocio"=>$request->socio,
+            "idCinta"=>$request->cinta,
+            "idPrestamo"=>$prestamo->id,
         ]);
+       // dd($prestamo);
         return redirect()->route('prestamos.index');
     }
 

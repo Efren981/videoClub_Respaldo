@@ -61,9 +61,9 @@
                                 <a href="{{url("cintas")}}" class="nav-link @yield("cintas_active")" data-toggle="tooltip" title="Ir a la seccion de Cintas">Cintas</a>
                             </li>
 
-                            {{--<li class="nav-item">
+                            <li class="nav-item">
                                 <a href="{{url("devoluciones")}}" class="nav-link @yield("devoluciones_active")" data-toggle="tooltip" title="Ir a la seccion de Devoluciones">Devoluciones</a>
-                            </li>--}}
+                            </li>
 
                             <li class="nav-item">
                                 <a href="{{url("directores")}}" class="nav-link @yield("directores_active")" data-toggle="tooltip" title="Ir a la seccion de Directores">Directores</a>
